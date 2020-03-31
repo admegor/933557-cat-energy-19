@@ -1,3 +1,7 @@
+.stage {
+    margin-bottom: 32px;
+}
+
 .stage__wrap {
     @include phone-wrap;
 }
