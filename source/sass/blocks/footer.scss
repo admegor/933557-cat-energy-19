@@ -1,71 +1,71 @@
 .footer {
-    background-color: $smoky;
+  background-color: $smoky;
 }
 
 .footer__wrap {
-    @include phone-wrap;
+  @include phone-wrap;
 }
 
 .footer__inner {
-    @include inner;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+  @include inner;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .footer__logo-wrap {
-    width: 100%;
-    border-bottom: $separator-grey;
-    height: 94px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  border-bottom: $separator-grey;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer__logo-link {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    &:hover {
-        opacity: .8;
-    }
+  &:hover {
+    opacity: 0.8;
+  }
 
-    &:active {
-        opacity: .6;
-    }
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .footer__social {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: $separator-grey;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: $separator-grey;
 }
 
 .footer__copyrights {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 78px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 78px;
 }
 
 .footer__copyrights-info {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    font-size: 16px;
-    line-height: 16px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin: 0;
+  font-size: 16px;
+  line-height: 16px;
 }
 
 .footer__copyrights-link-icon:hover path {
-    fill: $leaf;
+  fill: $leaf;
 }
 
 .footer__copyrights-link-icon:active path {
-    opacity: .3;
+  opacity: 0.3;
 }
