@@ -1,0 +1,59 @@
+.catalog__wrap {
+  @include phone-wrap;
+}
+
+.catalog__inner {
+  @include inner;
+}
+
+.catalog__title-wrap {
+  height: 104px;
+  display: flex;
+  align-items: center;
+  border-bottom: $separator-grey;
+}
+
+.catalog__item {
+  padding-bottom: 25px;
+  border-bottom: $separator-grey;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.catalog__title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  color: $almost-black;
+}
+
+.catalog__item-inner {
+  display: flex;
+}
+
+.catalog__title-item {
+  font-size: 16px;
+  line-height: 20px;
+  color: $almost-black;
+  text-transform: uppercase;
+  max-width: 75px;
+}
+
+.catalog__description-wrap {
+  width: 100%;
+}
+
+.property__table {
+  width: 100%;
+}
+
+.property__table-row {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.property__table-row:nth-child(2n) {
+  text-align: right;
+}

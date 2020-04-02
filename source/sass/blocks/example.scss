@@ -1,0 +1,68 @@
+.example {
+  background-color: $smoky;
+  padding-bottom: 38px;
+}
+
+.example__wrap {
+  @include phone-wrap;
+}
+
+.example__inner {
+  @include inner;
+}
+
+.example__header {
+  @include title-block;
+}
+
+.example__info {
+  font-family: "Arial", "Helvetica", sans-serif;
+  margin-bottom: 27px;
+}
+
+.example__result-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.example__result-item {
+  width: 124px;
+  height: 56px;
+  border: 1px solid $telegray;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.example__result-info {
+  margin-top: 12px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__result-subinfo {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  position: absolute;
+  text-align: center;
+  bottom: -15px;
+  background-color: $smoky;
+  padding: 0 14px;
+}
+
+.example__result-text {
+  text-align: center;
+  text-transform: uppercase;
+  color: $almost-black;
+  margin-bottom: 44px;
+}
+
+.example__slider {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}

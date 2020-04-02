@@ -1,0 +1,15 @@
+.header__wrap {
+  @include phone-wrap;
+}
+
+.header__inner {
+  @include inner;
+}
+
+.header__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  border-bottom: 1px solid $gainsborough;
+}

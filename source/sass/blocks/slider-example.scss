@@ -1,0 +1,39 @@
+.slider-example__progress-bar {
+  width: 84px;
+  height: 14px;
+  background-color: $white;
+  border: 1px solid $telegray;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  margin: 0 25px;
+  justify-content: start;
+}
+
+.slider-example__control {
+  width: 35px;
+  height: 6px;
+  background-color: $leaf;
+  border-radius: 3px;
+}
+
+.slider-example__selector {
+  display: flex;
+  align-items: center;
+}
+
+.slider-example__image {
+  margin-bottom: 35px;
+}
+
+.slider-example__image--2-item {
+  display: none;
+}
+
+.slider-example__before,
+.slider-example__after {
+  text-transform: uppercase;
+  margin: 0;
+  color: $almost-black;
+}

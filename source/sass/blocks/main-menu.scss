@@ -1,0 +1,24 @@
+.main-menu__list {
+  @include reset-list;
+  text-align: center;
+  height: auto;
+}
+
+.main-menu__item {
+  height: 64px;
+  border-bottom: 1px solid $gainsborough;
+}
+
+.main-menu__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $almost-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}

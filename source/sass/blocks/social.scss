@@ -1,0 +1,16 @@
+.social__list {
+  @include reset-list;
+  display: flex;
+}
+
+.social__item + .social__item {
+  margin-left: 38px;
+}
+
+.social__link-icon:hover path {
+  fill: $leaf;
+}
+
+.social__link-icon:active path {
+  opacity: 0.3;
+}
