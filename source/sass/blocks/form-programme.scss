@@ -42,25 +42,29 @@
   flex-direction: column;
 }
 
-.form-programme__cat-info-item {
+.form-programme__cat-info-item,
+.form-programme__owner-item {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.form-programme__cat-info-item + .form-programme__cat-info-item {
+.form-programme__cat-info-item + .form-programme__cat-info-item,
+.form-programme__owner-item + .form-programme__owner-item {
   margin-top: 14px;
 }
 
 .form-programme__cat-info-label,
-.form-programme__choose-programme-label {
+.form-programme__choose-programme-label,
+.form-programme__owner-label {
   padding-right: 16px;
   line-height: 18px;
   color: $graphitic;
   text-transform: uppercase;
 }
 
-.form-programme__cat-info-input {
+.form-programme__cat-info-input,
+.form-programme__owner-input {
   height: 45px;
   width: 100%;
   padding: 0 16px;
@@ -113,4 +117,36 @@
 
 .form-programme__choose-programme-item:hover .form-programme__checkbox {
   border-color: #bababa;
+}
+
+.form-programme__choose-programme-item:active {
+  opacity: 0.3;
+}
+
+.form-programme__owner {
+  padding: 31px 0;
+}
+
+.form-programme__owner-title {
+  @include section-title;
+}
+
+.form-programme__owner-list {
+  @include reset-list;
+}
+
+.form-programme__owner-input {
+  padding-right: 38px;
+
+  border: 1px solid $telegray;
+
+  &--email {
+    background: url("../../img/icon-mail.svg") no-repeat 180px center;
+    background-size: 18px 14px;
+  }
+
+  &--phone {
+    background: url("../../img/icon-phone.svg") no-repeat 170px center;
+    background-size: 21px 21px;
+  }
 }
