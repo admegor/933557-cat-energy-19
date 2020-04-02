@@ -38,6 +38,7 @@ img {
 }
 
 .button-cat {
+  border: none;
   color: $white;
   background-color: $leaf;
   text-transform: uppercase;
@@ -47,4 +48,10 @@ img {
   align-items: center;
   width: 100%;
   height: 40px;
+  cursor: pointer;
+
+  &--show-more {
+    background-color: $smoky;
+    color: $wet-asphalt;
+  }
 }

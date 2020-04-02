@@ -1,0 +1,26 @@
+.show-more {
+  display: flex;
+  align-items: center;
+}
+
+.show-more__plus {
+  margin: 25px 0;
+  opacity: 0.2;
+}
+
+.show-more__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: $almost-black;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+
+.show-more__subtitle {
+  margin: 0;
+  font-family: $font-arial;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 22px;
+}
