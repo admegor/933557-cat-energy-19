@@ -124,7 +124,7 @@
 }
 
 .form-programme__owner {
-  padding: 31px 0;
+  padding-top: 31px;
 }
 
 .form-programme__owner-title {
@@ -149,4 +149,20 @@
     background: url("../../img/icon-phone.svg") no-repeat 170px center;
     background-size: 21px 21px;
   }
+}
+
+.form-programme__comment-title {
+  @include section-title;
+}
+
+.form-programme__comment-textarea {
+  resize: none;
+  height: 150px;
+}
+
+.form-programme__comment-textarea::placeholder {
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+  color: $wet-asphalt;
+  padding: 15px 16px;
 }
