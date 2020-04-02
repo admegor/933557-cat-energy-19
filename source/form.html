@@ -62,22 +62,22 @@
             <ul class="form-programme__choose-programme-list">
               <li class="form-programme__choose-programme-item">
                 <label class="form-programme__choose-programme-label" for="slim">
-                  <input class="form-programme__choose-programme-input" type="radio" name="choose-programme" id="slim" checked>
-                  <span class="form-programme__checkbox"></span>
+                  <input class="form-programme__choose-programme-input visually-hidden" type="radio" name="choose-programme" id="slim" checked>
+                  <span class="form-programme__radio"></span>
                   Похудение
                 </label>
               </li>
               <li class="form-programme__choose-programme-item">
                 <label class="form-programme__choose-programme-label" for="pro">
-                  <input class="form-programme__choose-programme-input" type="radio" name="choose-programme" id="pro">
-                  <span class="form-programme__checkbox"></span>
+                  <input class="form-programme__choose-programme-input visually-hidden" type="radio" name="choose-programme" id="pro">
+                  <span class="form-programme__radio"></span>
                   Набор массы
                 </label>
               </li>
               <li class="form-programme__choose-programme-item">
                 <label class="form-programme__choose-programme-label" for="advice">
-                  <input class="form-programme__choose-programme-input" type="radio" name="choose-programme" id="advice">
-                  <span class="form-programme__checkbox"></span>
+                  <input class="form-programme__choose-programme-input visually-hidden" type="radio" name="choose-programme" id="advice">
+                  <span class="form-programme__radio"></span>
                   Не знаю (Нужен ваш совет)
                 </label>
               </li>
@@ -107,24 +107,36 @@
             <legend class="form-programme__optional-title">Дополнительно</legend>
             <ul class="form-programme__optional-list">
               <li class="form-programme__optional-item">
-                <input class="form-programme__optional-input" type="checkbox" name="optional" id="sugar-substitute">
-                <label class="form-programme__optional-label" for="sugar-substitute">Сахарозаменитель</label>
+                <label class="form-programme__optional-label" for="sugar-substitute">
+                  <input class="form-programme__optional-input" type="checkbox" name="optional" id="sugar-substitute">
+                  <span class="form-programme__checkbox"></span>
+                  Сахарозаменитель
+                </label>
               </li>
               <li class="form-programme__optional-item">
-                <input class="form-programme__optional-input" type="checkbox" name="optional" id="water">
-                <label class="form-programme__optional-label" for="water">Питьевая вода</label>
+                <label class="form-programme__optional-label" for="water">
+                  <input class="form-programme__optional-input" type="checkbox" name="optional" id="water">
+                  <span class="form-programme__checkbox"></span>
+                  Питьевая вода
+                </label>
               </li>
               <li class="form-programme__optional-item">
-                <input class="form-programme__optional-input" type="checkbox" name="optional" id="milk">
-                <label class="form-programme__optional-label" for="milk">Молоко</label>
+                <label class="form-programme__optional-label" for="milk">
+                  <input class="form-programme__optional-input" type="checkbox" name="optional" id="milk" checked>
+                  <span class="form-programme__checkbox"></span>
+                  Молоко
+                </label>
               </li>
               <li class="form-programme__optional-item">
-                <input class="form-programme__optional-input" type="checkbox" name="optional" id="vitamins">
-                <label class="form-programme__optional-label" for="vitamins">Витамины</label>
+                <label class="form-programme__optional-label" for="vitamins">
+                  <input class="form-programme__optional-input" type="checkbox" name="optional" id="vitamins">
+                  <span class="form-programme__checkbox"></span>
+                  Витамины
+                </label>
               </li>
             </ul>
           </fieldset>
-          <input class="form-programme__submit button" type="submit" value="Отправить заявку">
+          <input class="button-cat" type="submit" value="Отправить заявку">
           <p class="form-programme__note">* — Обязательные поля</p>
         </form>
       </div>

@@ -43,20 +43,22 @@
 }
 
 .form-programme__cat-info-item,
-.form-programme__owner-item {
+.form-programme__owner-item, {
   display: flex;
   align-items: center;
   width: 100%;
 }
 
 .form-programme__cat-info-item + .form-programme__cat-info-item,
-.form-programme__owner-item + .form-programme__owner-item {
+.form-programme__owner-item + .form-programme__owner-item,
+.form-programme__optional-item + .form-programme__optional-item {
   margin-top: 14px;
 }
 
 .form-programme__cat-info-label,
 .form-programme__choose-programme-label,
-.form-programme__owner-label {
+.form-programme__owner-label,
+.form-programme__optional-label {
   padding-right: 16px;
   line-height: 18px;
   color: $graphitic;
@@ -83,15 +85,11 @@
   margin-top: 26px;
 }
 
-.form-programme__choose-programme-input {
-  display: none;
-}
-
 .form-programme__choose-programme-label {
- padding-left: 46px;
+  padding-left: 46px;
 }
 
-.form-programme__checkbox {
+.form-programme__radio {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -101,7 +99,7 @@
   margin-top: -6px;
 }
 
-.form-programme__choose-programme-input:checked + .form-programme__checkbox::before {
+.form-programme__choose-programme-input:checked + .form-programme__radio::before {
   content: "";
   position: absolute;
 
@@ -115,7 +113,7 @@
   background-color: $leaf;
 }
 
-.form-programme__choose-programme-item:hover .form-programme__checkbox {
+.form-programme__choose-programme-item:hover .form-programme__radio {
   border-color: #bababa;
 }
 
@@ -166,3 +164,59 @@
   color: $wet-asphalt;
   padding: 15px 16px;
 }
+
+.form-programme__optional-title {
+  @include section-title;
+}
+
+.form-programme__optional-list {
+  @include reset-list;
+}
+
+.form-programme__optional-label {
+  padding-left: 46px;
+}
+
+.form-programme__checkbox {
+  width: 30px;
+  height: 30px;
+  border: 1px solid $telegray;
+  position: absolute;
+  margin-left: -40px;
+  margin-top: -6px;
+}
+
+.form-programme__optional-item + .form-programme__optional-item {
+  margin-top: 28px;
+}
+
+.form-programme__optional-input:checked + .form-programme__checkbox::before {
+  content: "";
+  position: absolute;
+
+  width: 22px;
+  height: 17px;
+
+  top: 6px;
+  left: 4px;
+
+  background: url("../../img/icon-tick.svg") no-repeat center center;
+}
+
+.form-programme__optional-input,
+.form-programme__optional-input:checked {
+  @include visually-hidden;
+}
+
+.form-programme__optional {
+  margin-bottom: 43px;
+}
+
+.form-programme__note {
+  margin: 0;
+  text-align: center;
+  font-family: $font-arial;
+  margin-top: 23px;
+  margin-bottom: 34px;
+}
+
