@@ -31,6 +31,86 @@
   @include fieldset-reset;
 }
 
+.form-programme__cat-info {
+  padding-bottom: 23px;
+  border-bottom: $separator-grey;
+}
+
 .form-programme__cat-info-list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-programme__cat-info-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-programme__cat-info-item + .form-programme__cat-info-item {
+  margin-top: 14px;
+}
+
+.form-programme__cat-info-label,
+.form-programme__choose-programme-label {
+  padding-right: 16px;
+  line-height: 18px;
+  color: $graphitic;
+  text-transform: uppercase;
+}
+
+.form-programme__cat-info-input {
+  height: 45px;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.form-programme__choose-programme {
+  padding: 21px 0;
+  border-bottom: $separator-grey;
+}
+
+.form-programme__choose-programme-list {
+  @include reset-list;
+}
+
+.form-programme__choose-programme-item + .form-programme__choose-programme-item {
+  margin-top: 26px;
+}
+
+.form-programme__choose-programme-input {
+  display: none;
+}
+
+.form-programme__choose-programme-label {
+ padding-left: 46px;
+}
+
+.form-programme__checkbox {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  margin-left: -46px;
+  margin-top: -6px;
+}
+
+.form-programme__choose-programme-input:checked + .form-programme__checkbox::before {
+  content: "";
+  position: absolute;
+
+  width: 12px;
+  height: 12px;
+
+  top: 8px;
+  left: 8px;
+
+  border-radius: 50%;
+  background-color: $leaf;
+}
+
+.form-programme__choose-programme-item:hover .form-programme__checkbox {
+  border-color: #bababa;
 }

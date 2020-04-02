@@ -44,33 +44,42 @@
             <legend class="visually-hidden">Данные кота</legend>
             <ul class="form-programme__cat-info-list">
               <li class="form-programme__cat-info-item">
-                <label for="cat-name">Имя:*</label>
-                <input type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
+                <label class="form-programme__cat-info-label" for="cat-name">Имя:*</label>
+                <input class="form-programme__cat-info-input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
               </li>
               <li class="form-programme__cat-info-item">
-                <label for="cat-weight">Вес (кг):*</label>
-                <input type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
+                <label class="form-programme__cat-info-label" for="cat-weight">Вес&nbsp;(кг):*</label>
+                <input class="form-programme__cat-info-input" type="text" id="cat-weight" name="cat-weight" placeholder="7" required>
               </li>
               <li class="form-programme__cat-info-item">
-                <label for="cat-age">Возраст (лет):</label>
-                <input type="text" id="cat-age" name="cat-age" placeholder="7">
+                <label class="form-programme__cat-info-label" for="cat-age">Возраст&nbsp;(лет):</label>
+                <input class="form-programme__cat-info-input" type="text" id="cat-age" name="cat-age" placeholder="7">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-programme__choose-programme">
-            <legend class="vissualy-hidden">Выберете программу</legend>
+            <legend class="visually-hidden">Выберете программу</legend>
             <ul class="form-programme__choose-programme-list">
               <li class="form-programme__choose-programme-item">
-                <input type="checkbox" name="slim" id="slim">
-                <label for="slim">Похудение</label>
+                <label class="form-programme__choose-programme-label" for="slim">
+                  <input class="form-programme__choose-programme-input" type="radio" name="choose-programme" id="slim" checked>
+                  <span class="form-programme__checkbox"></span>
+                  Похудение
+                </label>
               </li>
               <li class="form-programme__choose-programme-item">
-                <input type="checkbox" name="pro" id="pro">
-                <label for="pro">Набор массы</label>
+                <label class="form-programme__choose-programme-label" for="pro">
+                  <input class="form-programme__choose-programme-input" type="radio" name="choose-programme" id="pro">
+                  <span class="form-programme__checkbox"></span>
+                  Набор массы
+                </label>
               </li>
               <li class="form-programme__choose-programme-item">
-                <input type="checkbox" name="advice" id="advice">
-                <label for="advice">Не знаю (Нужен ваш совет)</label>
+                <label class="form-programme__choose-programme-label" for="advice">
+                  <input class="form-programme__choose-programme-input" type="radio" name="choose-programme" id="advice">
+                  <span class="form-programme__checkbox"></span>
+                  Не знаю (Нужен ваш совет)
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -79,38 +88,38 @@
             <legend class="form-programme__owner-title">Контактные данные (владельца кота)</legend>
             <ul class="form-programme__owner-list">
               <li class="form-programme__owner-item">
-                <label for="owner-email">E-mail:*</label>
-                <input type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
+                <label class="form-programme__owner-label" for="owner-email">E-mail:*</label>
+                <input class="form-programme__owner-input" type="email" name="owner-email" id="owner-email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="form-programme__owner-item">
-                <label for="owner-tel">Телефон:*</label>
-                <input type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
+                <label class="form-programme__owner-label" for="owner-tel">Телефон:*</label>
+                <input class="form-programme__owner-input" type="tel" name="owner-tel" id="owner-tel" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-programme__comment">
             <legend class="form-programme__comment-title">Комментарий</legend>
-            <textarea name="comment" cols="40" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-programme__comment-textarea" name="comment" cols="40" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form-programme__optional">
             <legend class="form-programme__optional-title">Дополнительно</legend>
             <ul class="form-programme__optional-list">
               <li class="form-programme__optional-item">
-                <input type="checkbox" name="sugar-substitute" id="sugar-substitute">
-                <label for="sugar-substitute">Сахарозаменитель</label>
+                <input class="form-programme__optional-input" type="checkbox" name="optional" id="sugar-substitute">
+                <label class="form-programme__optional-label" for="sugar-substitute">Сахарозаменитель</label>
               </li>
               <li class="form-programme__optional-item">
-                <input type="checkbox" name="water" id="water">
-                <label for="water">Питьевая вода</label>
+                <input class="form-programme__optional-input" type="checkbox" name="optional" id="water">
+                <label class="form-programme__optional-label" for="water">Питьевая вода</label>
               </li>
               <li class="form-programme__optional-item">
-                <input type="checkbox" name="milk" id="milk">
-                <label for="milk">Молоко</label>
+                <input class="form-programme__optional-input" type="checkbox" name="optional" id="milk">
+                <label class="form-programme__optional-label" for="milk">Молоко</label>
               </li>
               <li class="form-programme__optional-item">
-                <input type="checkbox" name="vitamins" id="vitamins">
-                <label for="vitamins">Витамины</label>
+                <input class="form-programme__optional-input" type="checkbox" name="optional" id="vitamins">
+                <label class="form-programme__optional-label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
