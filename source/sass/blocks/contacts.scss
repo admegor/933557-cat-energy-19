@@ -1,6 +1,11 @@
 .contacts {
   position: relative;
   margin-bottom: -38px;
+
+  &--inner {
+    background-color: $smoky;
+    z-index: -1;
+  }
 }
 
 .contacts__map {
@@ -20,6 +25,10 @@
   @include phone-wrap;
   min-height: 114px;
   background-color: $white;
+
+  &--inner {
+    background-color: $smoky;
+  }
 }
 
 .contacts__info-wrap {

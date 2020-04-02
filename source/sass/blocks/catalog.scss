@@ -7,10 +7,11 @@
 }
 
 .catalog__title-wrap {
-  height: 104px;
-  display: flex;
-  align-items: center;
-  border-bottom: $separator-grey;
+  @include page-title-wrap;
+}
+
+.catalog__title {
+  @include page-title;
 }
 
 .catalog__item {
@@ -19,13 +20,6 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-}
-
-.catalog__title {
-  margin: 0;
-  font-size: 36px;
-  line-height: 60px;
-  color: $almost-black;
 }
 
 .catalog__item-inner {

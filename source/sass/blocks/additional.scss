@@ -1,0 +1,49 @@
+.additional {
+  padding-bottom: 35px;
+}
+
+.additional__wrap {
+  @include phone-wrap;
+}
+
+.additional__inner {
+  @include inner;
+}
+
+.additional__title-wrap {
+  position: relative;
+  border-bottom: $separator-grey;
+}
+
+.additional__item {
+  padding-bottom: 14px;
+  border-bottom: $separator-grey;
+}
+
+.additional__title {
+  @include section-title;
+}
+
+.additional__list {
+  @include reset-list;
+}
+
+.additional__title-item {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 16px;
+  line-height: 16px;
+  color: $graphitic;
+  text-transform: uppercase;
+}
+
+.additional__table {
+  width: 100%;
+  margin-bottom: 14px;
+  font-family: $font-arial;
+  line-height: 14px;
+}
+
+.additional__table-row:nth-child(2n) {
+  text-align: right;
+}

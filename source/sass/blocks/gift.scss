@@ -1,0 +1,20 @@
+.gift {
+  width: 280px;
+  height: 289px;
+  background: url("../../img/gift-photo-mobile@1x.jpg") no-repeat center center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 43px 0;
+  margin-top: 39px;
+}
+
+.gift__content {
+  margin: 0;
+  text-align: center;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-arial;
+  margin-top: 64px;
+}
