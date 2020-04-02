@@ -1,0 +1,36 @@
+.form-programme__wrap {
+  @include phone-wrap;
+}
+
+.form-programme__inner {
+  @include inner;
+}
+
+.form-programme__title-wrap {
+  @include page-title-wrap;
+  border-bottom: none;
+}
+
+.form-programme__title {
+  @include page-title;
+}
+
+.form-programme__text {
+  margin: 0;
+  color: $almost-black;
+  text-transform: uppercase;
+  width: 230px;
+  margin-bottom: 39px;
+}
+
+.form-programme__cat-info,
+.form-programme__choose-programme,
+.form-programme__owner,
+.form-programme__comment,
+.form-programme__optional {
+  @include fieldset-reset;
+}
+
+.form-programme__cat-info-list {
+  @include reset-list;
+}

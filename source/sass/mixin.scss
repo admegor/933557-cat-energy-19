@@ -13,6 +13,11 @@
   list-style: none;
 }
 
+@mixin fieldset-reset {
+  border: none;
+  padding: 0;
+}
+
 @mixin title-block {
   font-size: 36px;
   line-height: 60px;
@@ -42,4 +47,18 @@
     height: 3px;
     background-color: $leaf;
   }
+}
+
+@mixin page-title-wrap {
+  height: 104px;
+  display: flex;
+  align-items: center;
+  border-bottom: $separator-grey;
+}
+
+@mixin page-title {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  color: $almost-black;
 }
